@@ -1,0 +1,4 @@
+D:\GitCode\New\SettingsHostsAndDnsSite\SettingsHostsAndDnsSite\Models\bin\Release\Models.dll
+D:\GitCode\New\SettingsHostsAndDnsSite\SettingsHostsAndDnsSite\Models\bin\Release\Models.pdb
+D:\GitCode\New\SettingsHostsAndDnsSite\SettingsHostsAndDnsSite\Models\obj\Release\Models.dll
+D:\GitCode\New\SettingsHostsAndDnsSite\SettingsHostsAndDnsSite\Models\obj\Release\Models.pdb

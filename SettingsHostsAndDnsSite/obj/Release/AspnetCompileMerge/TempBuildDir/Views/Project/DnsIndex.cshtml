@@ -1,0 +1,62 @@
+﻿@model IEnumerable<Models.t_Dns>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Scripts/jquery-1.9.0.min.js"></script>
+    <link href="~/Content/layui/css/layui.css" rel="stylesheet" />
+    <script src="~/Content/layui/layui.js"></script>
+    <script src="~/Scripts/tools.js"></script>
+</head>
+<body>
+    <div style="padding:10px;width:800px;">
+        <p>
+            <button class="layui-btn  layui-btn-primary" onclick="document.location.href = '/Project/Create';"><i class="layui-icon">&#xe608;</i> 添加项目</button>
+        </p>
+        <table class="layui-table">
+            <tr>
+                <th>
+                    IP地址
+                </th>
+                <th>
+                    主DNS
+                </th>
+                <th>
+                    备用DNS
+                </th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr id="Project_@item.Id">
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MainDns)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.BackUpDns)
+                    </td>
+                    <td>
+                        <a class="layui-btn layui-btn-primary layui-btn-small" href="/Project/DnsEdit?pid=@item.Id">
+                            <i class="layui-icon">&#xe642;</i>编辑
+                        </a>
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+    <script>
+        layui.use(['form'], function () {
+            var form = layui.form()
+                , layer = layui.layer;
+
+        });
+    </script>
+</body>
+</html>

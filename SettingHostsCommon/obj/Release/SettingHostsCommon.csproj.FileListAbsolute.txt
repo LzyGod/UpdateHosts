@@ -1,0 +1,4 @@
+D:\GitCode\New\SettingsHostsAndDnsSite\SettingsHostsAndDnsSite\SettingHostsCommon\bin\Release\SettingHostsCommon.dll
+D:\GitCode\New\SettingsHostsAndDnsSite\SettingsHostsAndDnsSite\SettingHostsCommon\bin\Release\SettingHostsCommon.pdb
+D:\GitCode\New\SettingsHostsAndDnsSite\SettingsHostsAndDnsSite\SettingHostsCommon\obj\Release\SettingHostsCommon.dll
+D:\GitCode\New\SettingsHostsAndDnsSite\SettingsHostsAndDnsSite\SettingHostsCommon\obj\Release\SettingHostsCommon.pdb

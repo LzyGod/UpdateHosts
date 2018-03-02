@@ -1,0 +1,54 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>传奇后台管理系统</title>
+    <link href="~/Content/layui/css/layui.css" rel="stylesheet" media="all" />
+    <link href="~/Content/login.css" rel="stylesheet" />
+</head>
+<body class="beg-login-bg">
+    <div class="beg-login-box">
+        <header>
+            <h1>传奇后台管理系统</h1>
+        </header>
+        <div class="beg-login-main">
+            <div class="layui-form">
+                <div class="layui-form-item">
+                    <label class="beg-login-icon">
+                        <i class="layui-icon">&#xe612;</i>
+                    </label>
+                    <input type="text" name="userName" id="uname" placeholder="这里输入登录名" class="layui-input">
+                </div>
+                <div class="layui-form-item">
+                    <label class="beg-login-icon">
+                        <i class="layui-icon">&#xe642;</i>
+                    </label>
+                    <input type="password" name="password" id="upass" placeholder="这里输入密码" class="layui-input">
+                </div>
+                <div class="layui-form-item">
+                    <div class="" style="width:100%;">
+                        <button class="layui-btn layui-btn-primary layui-btn-big" onclick="LoginPage.Login();">
+                            <i class="layui-icon">&#xe609;</i>  立 即 登 录
+                        </button>
+                    </div>
+                    <div class="beg-clear"></div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p> ©2012-@DateTime.Now.Year 车站阿鱼 </p>
+        </footer>
+    </div>
+    <script src="~/Scripts/jquery-1.9.0.min.js"></script>
+    <link href="//cdn.bootcss.com/layer/3.0.1/skin/default/layer.min.css" rel="stylesheet">
+    <script src="//cdn.bootcss.com/layer/3.0.1/layer.min.js"></script>
+    <script src="~/Scripts/tools.js"></script>
+    <script src="~/Scripts/Login.js"></script>
+</body>
+</html>

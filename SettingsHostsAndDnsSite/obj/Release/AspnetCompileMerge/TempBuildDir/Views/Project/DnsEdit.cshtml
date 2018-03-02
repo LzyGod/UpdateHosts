@@ -1,0 +1,61 @@
+﻿@model Models.t_Dns
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DnsEdit</title>
+    <script src="~/Scripts/jquery-1.9.0.min.js"></script>
+    <link href="~/Content/layui/css/layui.css" rel="stylesheet" />
+    <script src="~/Content/layui/layui.js"></script>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        <div style="padding:10px;width:800px;">
+            <div class="layui-form layui-form-pane">
+                <b style="font-size:16px; float:left;">修改设定</b>
+
+                <a href="/Project/Index" style="float:right;">返回列表</a>
+                <hr style="clear:both;" />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                @Html.HiddenFor(model => model.Id)
+                <div class="layui-form-item">
+                    <label class="layui-form-label">IP地址</label>
+                    <div class="layui-input-block">
+                        @Html.EditorFor(model => model.MainDns, new { htmlAttributes = new { @class = "layui-input", @placeholder = "请输入主DNS" } })
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">域名</label>
+                    <div class="layui-input-block">
+                        @Html.EditorFor(model => model.BackUpDns, new { htmlAttributes = new { @class = "layui-input", @placeholder = "请输入备用DNS" } })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="保存数据" onclick="tools.NotNullValid('MainDns', '请输入主DNS', event); tools.NotNullValid('BackUpDns', '请输入备用DNS', event);" class="layui-btn layui-btn-big layui-btn-primary" style="width:180px;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    }
+    <script src="~/Scripts/tools.js"></script>
+    <script>
+        layui.use(['form'], function () {
+            var form = layui.form()
+                , layer = layui.layer;
+
+        });
+    </script>
+</body>
+</html>

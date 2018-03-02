@@ -28,13 +28,13 @@
                 @Html.ValidationSummary(true, "", new { @class = "text-danger" })
                 @Html.HiddenFor(model => model.Id)
                 <div class="layui-form-item">
-                    <label class="layui-form-label">IP地址</label>
+                    <label class="layui-form-label">主DNS</label>
                     <div class="layui-input-block">
                         @Html.EditorFor(model => model.MainDns, new { htmlAttributes = new { @class = "layui-input", @placeholder = "请输入主DNS" } })
                     </div>
                 </div>
                 <div class="layui-form-item">
-                    <label class="layui-form-label">域名</label>
+                    <label class="layui-form-label">备用DNS</label>
                     <div class="layui-input-block">
                         @Html.EditorFor(model => model.BackUpDns, new { htmlAttributes = new { @class = "layui-input", @placeholder = "请输入备用DNS" } })
                     </div>

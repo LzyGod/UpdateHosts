@@ -124,7 +124,7 @@ namespace SettingsHostsAndDnsSite.Controllers
             {
                 DnsDal.Update(model);
                 DnsDal.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("DnsIndex");
             }
             return View(model);
         }

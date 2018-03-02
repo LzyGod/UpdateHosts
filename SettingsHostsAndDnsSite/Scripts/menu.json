@@ -10,7 +10,7 @@
     "childMenus": [
       {
         "id": "3",
-        "name": "基础配置",
+        "name": "配置设定",
         "parentId": "1",
         "url": "",
         "icon": "",
@@ -19,7 +19,7 @@
         "childMenus": [
           {
             "id": "4",
-            "name": "项目管理",
+            "name": "Hosts管理",
             "parentId": "3",
             "url": "/Project",
             "icon": "&#xe606;",

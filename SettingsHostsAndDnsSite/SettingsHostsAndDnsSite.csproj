@@ -411,6 +411,8 @@
     <Content Include="Scripts\Alert.js" />
     <Content Include="Scripts\DataCleaning.js" />
     <Content Include="Scripts\jquery-1.9.0.min.js" />
+    <Content Include="Scripts\layer.min.css" />
+    <Content Include="Scripts\layer.min.js" />
     <Content Include="Scripts\Log.js" />
     <Content Include="Scripts\Login.js" />
     <Content Include="Scripts\Machine.js" />
@@ -486,6 +488,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Project\DnsEdit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

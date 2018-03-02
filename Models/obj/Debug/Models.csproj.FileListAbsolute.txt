@@ -1,0 +1,6 @@
+H:\Code\Project\SettingsHostsAndDnsSite\Models\bin\Debug\Models.dll
+H:\Code\Project\SettingsHostsAndDnsSite\Models\bin\Debug\Models.pdb
+H:\Code\Project\SettingsHostsAndDnsSite\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+H:\Code\Project\SettingsHostsAndDnsSite\Models\obj\Debug\Models.dll
+H:\Code\Project\SettingsHostsAndDnsSite\Models\obj\Debug\Models.pdb
+H:\Code\Project\SettingsHostsAndDnsSite\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache

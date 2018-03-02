@@ -4,3 +4,7 @@ H:\Code\Project\SettingsHostsAndDnsSite\Models\obj\Debug\Models.csproj.CoreCompi
 H:\Code\Project\SettingsHostsAndDnsSite\Models\obj\Debug\Models.dll
 H:\Code\Project\SettingsHostsAndDnsSite\Models\obj\Debug\Models.pdb
 H:\Code\Project\SettingsHostsAndDnsSite\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+D:\GitCode\New\SettingsHostsAndDnsSite\SettingsHostsAndDnsSite\Models\bin\Debug\Models.dll
+D:\GitCode\New\SettingsHostsAndDnsSite\SettingsHostsAndDnsSite\Models\bin\Debug\Models.pdb
+D:\GitCode\New\SettingsHostsAndDnsSite\SettingsHostsAndDnsSite\Models\obj\Debug\Models.dll
+D:\GitCode\New\SettingsHostsAndDnsSite\SettingsHostsAndDnsSite\Models\obj\Debug\Models.pdb

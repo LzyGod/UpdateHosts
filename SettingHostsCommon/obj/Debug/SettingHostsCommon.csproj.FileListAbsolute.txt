@@ -5,3 +5,7 @@ H:\Code\Project\SettingsHostsAndDnsSite\SettingHostsCommon\obj\Debug\SettingHost
 H:\Code\Project\SettingsHostsAndDnsSite\SettingHostsCommon\obj\Debug\SettingHostsCommon.dll
 H:\Code\Project\SettingsHostsAndDnsSite\SettingHostsCommon\obj\Debug\SettingHostsCommon.pdb
 H:\Code\Project\SettingsHostsAndDnsSite\SettingHostsCommon\obj\Debug\SettingHostsCommon.csprojResolveAssemblyReference.cache
+D:\GitCode\New\SettingsHostsAndDnsSite\SettingsHostsAndDnsSite\SettingHostsCommon\bin\Debug\SettingHostsCommon.dll
+D:\GitCode\New\SettingsHostsAndDnsSite\SettingsHostsAndDnsSite\SettingHostsCommon\bin\Debug\SettingHostsCommon.pdb
+D:\GitCode\New\SettingsHostsAndDnsSite\SettingsHostsAndDnsSite\SettingHostsCommon\obj\Debug\SettingHostsCommon.dll
+D:\GitCode\New\SettingsHostsAndDnsSite\SettingsHostsAndDnsSite\SettingHostsCommon\obj\Debug\SettingHostsCommon.pdb

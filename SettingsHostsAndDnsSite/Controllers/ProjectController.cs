@@ -16,6 +16,7 @@ namespace SettingsHostsAndDnsSite.Controllers
         /// 初始项目服务
         /// </summary>
         private BaseDAL<t_Hosts> hostsDal = new BaseDAL<t_Hosts>();
+        private BaseDAL<t_Dns> DnsDal = new BaseDAL<t_Dns>();
         /// <summary>
         /// 获取项目列表
         /// </summary>
@@ -90,6 +91,42 @@ namespace SettingsHostsAndDnsSite.Controllers
                 return Json(Result.Success());
             }
             return Json(Result.Fail("删除失败"));
+        }
+
+        /// <summary>
+        /// 获取项目列表
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult DnsIndex()
+        {
+            return View(DnsDal.GetModels(t => true).ToList());
+        }
+
+        /// <summary>
+        /// 编辑项目页面
+        /// </summary>
+        /// <param name="pid"></param>
+        /// <returns></returns>
+        public ActionResult DnsEdit(int pid)
+        {
+            return View(DnsDal.GetModels(t => t.Id == pid).FirstOrDefault());
+        }
+        /// <summary>
+        /// 编辑项目操作
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult DnsEdit([Bind(Include = "Id,MainDns,BackUpDns")]t_Dns model)
+        {
+            if (ModelState.IsValid)
+            {
+                DnsDal.Update(model);
+                DnsDal.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(model);
         }
     }
 }

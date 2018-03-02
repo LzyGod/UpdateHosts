@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Models.t_Hosts>
+﻿@model IEnumerable<Models.t_Dns>
 
 @{
     Layout = null;
@@ -26,10 +26,10 @@
                     IP地址
                 </th>
                 <th>
-                   域名
+                    主DNS
                 </th>
                 <th>
-                    操作
+                    备用DNS
                 </th>
             </tr>
 
@@ -37,18 +37,15 @@
             {
                 <tr id="Project_@item.Id">
                     <td>
-                        @Html.DisplayFor(modelItem => item.ipAddress)
+                        @Html.DisplayFor(modelItem => item.MainDns)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.DomainName)
+                        @Html.DisplayFor(modelItem => item.BackUpDns)
                     </td>
                     <td>
-                        <a class="layui-btn layui-btn-primary layui-btn-small" href="/Project/Edit?pid=@item.Id">
+                        <a class="layui-btn layui-btn-primary layui-btn-small" href="/Project/DnsEdit?pid=@item.Id">
                             <i class="layui-icon">&#xe642;</i>编辑
                         </a>
-                        <button class="layui-btn layui-btn-primary layui-btn-small" data-Id="@item.Id" onclick="tools.Del(@item.Id, 'Project_', siteUrl.DelProject)">
-                            <i class="layui-icon">&#xe640;</i>删除
-                        </button>
                     </td>
                 </tr>
             }

@@ -12,5 +12,6 @@ namespace DAL
 
         }
         public DbSet<t_Hosts> t_Log { set; get; }
+        public DbSet<t_Dns> t_Dns { get; set; }
     }
 }

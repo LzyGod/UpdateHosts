@@ -26,44 +26,13 @@
             "order": "1",
             "isHeader": "0",
             "childMenus": ""
-          }
-        ]
-      },
-      {
-        "id": "2",
-        "name": "数据管理",
-        "parentId": "1",
-        "url": "",
-        "icon": "",
-        "order": "1",
-        "isHeader": "0",
-        "childMenus": [
-          {
-            "id": "7",
-            "name": "错误日志查询",
-            "parentId": "2",
-            "url": "/Log",
-            "icon": "&#xe607;",
-            "order": "1",
-            "isHeader": "0",
-            "childMenus": ""
           },
           {
-            "id": "8",
-            "name": "数据清除",
-            "parentId": "2",
-            "url": "/DataCleaning/PasswordConfirmation",
-            "icon": "&#xe618;",
-            "order": "1",
-            "isHeader": "0",
-            "childMenus": ""
-          },
-          {
-            "id": "9",
-            "name": "机器信息查询",
-            "parentId": "2",
-            "url": "/Machine",
-            "icon": "&#xe607;",
+            "id": "5",
+            "name": "Dns管理",
+            "parentId": "3",
+            "url": "/Project/DnsIndex",
+            "icon": "&#xe606;",
             "order": "1",
             "isHeader": "0",
             "childMenus": ""
@@ -72,5 +41,4 @@
       }
     ]
   }
-
 ]
